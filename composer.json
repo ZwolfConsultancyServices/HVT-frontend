@@ -1,8 +1,0 @@
-{
-    "name": "your-vendor/your-package",
-    "description": "it is a holy vrindavan toiur and travels website created to help people to explore our relegious mathura and vrindavan ",
-    "require": {
-        "php": "^7.4 || ^8.0"
-
-    }
-}
