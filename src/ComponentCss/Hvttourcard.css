@@ -1,0 +1,42 @@
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.explore-btn {
+  background-color: #9b8c5f  !important;
+  border: none !important;
+  color: #fff;
+}
+
+.explore-btn:hover {
+  background-color: #917d43 !important;
+  border: none !important;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1); 
+}

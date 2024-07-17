@@ -1,0 +1,150 @@
+.text-p{
+  font-size: 13px !important;
+}
+.about-section {
+
+  padding: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  width: 100%;
+  
+  text-align: center; 
+  color: #ffffff; 
+  margin-top: -20px;
+}
+
+
+h2 {
+  font-family: "Arial", sans-serif; 
+  font-size: 2rem;
+}
+
+.about-s {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  margin-top: -30px;
+}
+
+/* .col-sm-6 {
+  flex: 0 0 100%;  
+  max-width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+ */
+.logo-img {
+  width: 100%; 
+  height: auto;
+  border-radius: 10%;
+  margin-top: 50px;
+}
+
+.text-column {
+  padding: 20px; 
+}
+
+.text-column p {
+  font-size: 1.1rem;
+  text-align: justify;
+  color: #ffffff; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 40px; 
+  }
+  .content-container {
+    padding: 0 40px; 
+  }
+  h2 {
+    font-size: 1.75rem; 
+  }
+  
+  .text-column p {
+    font-size: 1.1rem; 
+    padding-top: 40px;
+  }
+
+  .logo-img {
+    width: 100%;
+    height: 60%;
+    margin-top: 145px;
+}
+}
+
+@media (max-width: 820px) {
+  .about-section {
+    padding: 30px; 
+  }
+  .content-container {
+    padding: 0 30px; 
+  }
+  h2 {
+    font-size: 1.5rem; 
+  }
+  .text-column p {
+    font-size: 1rem; 
+    margin-top: -85px;
+  }
+  .logo-img {
+    width: 60%;
+    height: 60%;
+    margin-top: 100px;
+}
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 20px; 
+  }
+  .content-container {
+    padding: 0 20px; 
+  }
+  h2 {
+    font-size: 1.25rem; 
+  }
+  .text-column {
+    max-height: 150px; 
+    overflow-y: auto; 
+  }
+  .text-column p {
+    font-size: 0.9rem; 
+  }
+  .logo-img {
+    width: 70%;
+    padding-bottom: 6px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-section {
+    padding: 10px; 
+  }
+  .content-container {
+    padding: 0 10px; 
+  }
+  h2 {
+    font-size: 1rem; 
+  }
+  .text-column {
+    max-height: 120px;
+    overflow-y: auto; 
+  }
+  .text-column p {
+    font-size: 0.7rem; 
+  }
+  .logo-img {
+
+    width: 84%;
+    padding-bottom: 12px;
+  }
+}

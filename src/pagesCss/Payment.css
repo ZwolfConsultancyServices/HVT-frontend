@@ -1,0 +1,32 @@
+
+
+.upi{
+    border:  1px solid rgb(192, 183, 183);
+    border-radius: 3px ;
+   transition: all 0.3s;
+}
+.upi>img{
+    height: 550px;
+    width: 400px;
+}
+.upi:hover{
+    box-shadow: 5px 5px 50px rgb(130, 129, 129);
+}
+.det{
+    border:  1px solid rgb(192, 183, 183);
+    border-radius: 3px ;
+   transition: all 0.3s;
+}
+.det:hover{
+    box-shadow: 5px 5px 50px rgb(130, 129, 129);
+}
+.Name{
+    border:  1px solid rgb(192, 183, 183);
+    border-radius: 3px ;
+   transition: all 0.3s;
+
+
+}
+.Name:hover{
+    box-shadow: 5px 5px 50px rgb(130, 129, 129);
+}

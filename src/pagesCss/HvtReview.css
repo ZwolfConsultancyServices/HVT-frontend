@@ -1,0 +1,56 @@
+/* HvtReview.css */
+.testimonial-item {
+  display: flex !important;
+  justify-content: center;
+  padding: 15px; /* Adds space between the cards */
+}
+
+.testimonial-card {
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; /* Adds a border to the card */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.testimonial-img {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #8E7E50;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #555;
+  margin: 10px 0;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.testimonial-designation {
+  color: #777;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-slide > div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}

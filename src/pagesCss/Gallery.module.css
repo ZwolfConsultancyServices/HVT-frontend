@@ -1,0 +1,85 @@
+.galleryContainer {
+    padding: 40px;
+}
+
+.imageGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 5px; 
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* Specific card sizes to mimic the provided layout */
+/* .card0 {
+    grid-row: span 2; 
+    grid-column: span 1;
+}
+
+.card1, .card2, .card4, .card5 {
+    grid-row: span 1; 
+    grid-column: span 1;
+} */
+
+/* .card3 {
+    grid-row: span 1; 
+    grid-column: span 2; 
+} */
+
+.card6 {
+    grid-row: span 2; /* Tall card */
+    grid-column: span 1;
+}
+
+@keyframes slide-in-from-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;   
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+    .imageGrid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+    }
+    .card3 {
+        grid-column: span 1; /* Adjust wide card on tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .imageGrid {
+        grid-template-columns: repeat(1, 1fr); /* Single column on mobile */
+    }
+
+    .viewMoreButton {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .viewMoreButton {
+        display: none; /* Hide view more button on tablet and desktop */
+    }
+}

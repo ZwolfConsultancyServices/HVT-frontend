@@ -1,0 +1,36 @@
+footer {
+    width: 100%;
+  }
+  
+  .img-fluid {
+    margin-right: 10px;
+  }
+  
+  .text-secondary {
+    color: #C7C7C7 !important;
+  }
+  .new-p{
+    font-size: .9rem;
+  }
+  
+  .bg-black {
+    background-color: #101010 !important;
+  }
+  .logo-head{
+    font-size: 20px;
+  }
+  
+  /* Adjust margin between sections */
+  @media (min-width: 768px) {
+    .col-lg-4 {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .col-lg-4 {
+      text-align: center;
+      margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,95 @@
+.plan-card {
+  margin: 20px 0;
+}
+
+.plan-card .card {
+  display: flex;
+}
+
+.plan-card .card img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+}
+
+.plan-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 100%; 
+}
+.Btn{
+  border: 1px solid;
+  border-radius: 20px;
+  padding : 5px ;
+  background: #94715f;
+transition: all 0.4s;
+color: white;
+}
+.Btn:hover{
+  background: #53463f;
+}
+.btn1{
+background-color: rgb(169, 156, 156);
+}
+.button-group {
+  display: flex;
+  justify-content: flex-start; 
+}
+
+.details-button,
+.book-now-button {
+  width: 150px; 
+}
+
+.itinerary {
+  position: relative;
+  padding-left: 40px;
+}
+
+.itinerary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background: hsl(29, 100%, 50%) 50%;
+}
+
+.itinerary-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.itinerary-item .itinerary-point {
+  position: absolute;
+  top: 0;
+  left: -28px;
+  width: 12px;
+  height: 12px;
+  background: hsl(29, 100%, 50%) 50%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.itinerary-day {
+  text-align: center;
+  font-weight: bold;
+  color: hsl(29, 100%, 50%) !important;
+  position: relative;
+}
+
+.itinerary-content {
+  padding-left: 20px;
+}
+
+.plan-card img {
+  height: 180px !important;
+  transition: transform 0.4s ease;
+}
+
+.plan-card img:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,11 @@
+.contain{
+    display: flex;
+    width: 100%;
+    border: 2px solid;
+
+}
+.sidebar{
+    width: 20%;
+    background-color: #f1f1f1;
+    
+}
