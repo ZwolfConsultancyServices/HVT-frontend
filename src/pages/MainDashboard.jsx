@@ -29,7 +29,7 @@ const Sidebar = ({ useremail }) => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:8000/user/get-user")
+            .get("https://hvt-backend.vercel.app/user/get-user")
             .then((res) => {
                 setViewData(res?.data?.result);
             })

@@ -15,7 +15,7 @@ const Dashboard = () => {
     }, []);
     let getUsers = async () => {
       try {
-        const users = await axios.get("http://localhost:8000/user/get-user");
+        const users = await axios.get("https://hvt-backend.vercel.app/user/get-user");
         setUser(users?.data?.result);
         console.log(users.data);
       } catch (error) {

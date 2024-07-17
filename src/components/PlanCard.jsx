@@ -21,12 +21,13 @@ const PlanCard = ({ plan }) => {
     Email: "",
     Date: "",
     Numberofadults: "",
-    Category: "",
+    // Category: "",
     Message: "",
   })
-  const url = "http://localhost:8000/User/create";
+  const url = "https://hvt-backend.vercel.app";
+  const userApiUrl = `${url}/User/create`;
   const submitHandler = async () => {
-    await axios.post(url, data)
+    await axios.post(userApiUrl, data)
       .then((res) => {
         toast.success("Enquiry sent successfully! We will contact you soon.😊");
         setData({
@@ -35,7 +36,7 @@ const PlanCard = ({ plan }) => {
           Email: "",
           Date: "",
           Numberofadults: "",
-          Category: "",
+          //
           Message: "",
         })
 
@@ -230,7 +231,7 @@ const PlanCard = ({ plan }) => {
                 />
               </Form.Group>
             </Row>
-            {/* 
+          
             <Form.Group className="mb-3" controlId="formCategoryOfHotels">
               <Form.Label>Category of Hotels Needed</Form.Label>
               <Form.Control as="select"
@@ -243,18 +244,18 @@ const PlanCard = ({ plan }) => {
                 <option> Deluxe</option>
                 <option> Luxury</option>
               </Form.Control>
-            </Form.Group> */}
+            </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formCategoryOfHotels">
+            {/*   <Form.Group className="mb-3" controlId="formCategoryOfHotels">
               <Form.Label>Category of Hotels Needed</Form.Label>
-              <Form.Control as="select" onChange={HanldeChange}>
+              <Form.Control as="select" name="category" value={data.category}  onChange={HanldeChange}>
                 <option>- Select -</option>
                 <option> Budget</option>
                 <option> Deluxe</option>
                 <option> Luxury</option>
               </Form.Control>
             </Form.Group>
-
+ */}
             <Form.Group className="mb-3" controlId="formMessage">
               <Form.Label>Message</Form.Label>
               <Form.Control

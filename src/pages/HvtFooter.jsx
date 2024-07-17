@@ -85,7 +85,7 @@ const HvtFooter = () => {
             </Link>
             <Link
               to="/login"
-              className="d-none d-md-block d-lg-block text-white d-block mb-2 text-decoration-none "
+              className="d-none d-sm-none d-md-block d-lg-block text-white d-block mb-2 text-decoration-none "
             >
               Admin 
             </Link>

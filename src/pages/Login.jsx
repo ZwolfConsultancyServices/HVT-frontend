@@ -5,6 +5,8 @@ import { Link, useNavigate } from "react-router-dom";
 import  axios from "axios";
 import "../pagesCss/Login.css"
 import { toast } from 'react-toastify';
+
+
 const Login = () => {
   const navigate = useNavigate();
 
@@ -14,9 +16,10 @@ const Login = () => {
       password: "",
     },
     onSubmit: (values) => {
-
+      const url = "https://hvt-backend.vercel.app";
+      const userApiUrl = `${url}/login`;
       axios
-      .post("http://localhost:8000/admin/login", values)
+      .post(userApiUrl, values)
       .then((res) => {
         navigate("/dashboard", { replace: true });
        toast.success("Admin login successfull")

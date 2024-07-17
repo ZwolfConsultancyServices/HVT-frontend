@@ -40,7 +40,7 @@ export const HvtHeader = () => {
                 Contact Us
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item className='d-none d-sm-block d-md-none d-lg-none'>
+            <Nav.Item className='d-block d-sm-block d-md-none d-lg-none'>
               <Nav.Link as={Link} to="/login">
                 Admin
               </Nav.Link>
